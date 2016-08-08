@@ -11,9 +11,7 @@ RUN docker-php-ext-install gd
 
 # Install MySQL
 RUN apt-get install -y mysql-client
-RUN docker-php-ext-install mysql
 RUN docker-php-ext-install mysqli
-RUN docker-php-ext-install pdo_mysql
 
 # Install XMLRPC
 RUN apt-get install -y libxml2-dev
