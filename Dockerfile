@@ -1,5 +1,4 @@
 FROM php:7.0-apache
-FROM php:7.0-fpm
 
 MAINTAINER Sk8r776
 
