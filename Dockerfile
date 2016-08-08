@@ -10,7 +10,9 @@ RUN docker-php-ext-configure gd --with-freetype-dir=/usr/include/ --with-jpeg-di
 RUN docker-php-ext-install gd
 
 # Install MySQL
+RUN apt-get install -y mysql
 RUN docker-php-ext-install pdo_mysql
+RUN docker-php-ext-install mysqli
 
 # Install XMLRPC
 RUN apt-get install -y libxml2-dev
