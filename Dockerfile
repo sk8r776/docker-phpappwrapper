@@ -24,4 +24,4 @@ RUN docker-php-ext-install mysqli
 RUN docker-php-ext-install xmlrpc
 
 # Install Unzip
-RUN docker-php-ext-install unzip
+RUN docker-php-ext-install zip
